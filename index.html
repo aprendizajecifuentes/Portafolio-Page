@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Ing. Juan Cifuentes R.</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="header-content">
+            <img src="Comprimida.png" alt="Foto de Perfil" class="profile-img" />
+
+            <h1>Portafolio Ing. Juan Cifuentes R.</h1>
+            <h2>Business Analyst Junior | Analista de Datos</h2>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certificaciones">Certificaciones</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="docs/CV_JuanCifuentes.pdf" target="_blank">Descargar CV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== SOBRE MI ===== -->
+    <section id="sobre-mi" class="section fade-in">
+        <h2>Sobre Mí</h2>
+        <p>
+            Soy un analista de datos con enfoque en la optimización de procesos, 
+            visualización de información y automatización. Me apasiona transformar 
+            datos en decisiones estratégicas mediante herramientas modernas como Python, 
+            SQL, Power BI y metodologías ágiles.
+        </p>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section id="proyectos" class="section fade-in">
+        <h2>Proyectos</h2>
+
+        <div class="cards-container">
+
+            <!-- PROYECTO 1 -->
+            <a class="card" href="https://github.com/aprendizajecifuentes?tab=repositories" target="_blank">
+                <img src="img/proyecto1.jpg" alt="GitHub Repos" />
+                <h3>GitHub Cuenta proyectos</h3>
+                <p>Visualización de los repositorios publicados en GitHub de los proyectos en curso.</p>
+            </a>
+
+            <!-- PROYECTO 2 -->
+            <a class="card" href="https://github.com/aprendizajecifuentes/Data_Pipeline_Ventas" target="_blank">
+                <img src="img/proyecto2.jpg" alt="Pipeline de Datos" />
+                <h3>Proyecto de pipeline de datos</h3>
+                <p>Pipeline de datos para clientes y ventas con limpieza, transformación y visualización.</p>
+            </a>
+
+            <!-- PROYECTO 3 -->
+            <a class="card" href="https://github.com/aprendizajecifuentes/2aistudio-Prueba" target="_blank">
+                <img src="img/proyecto3.jpg" alt="Mantenimiento Predictivo" />
+                <h3>Dashboard de Mantenimiento Predictivo (En Proceso)</h3>
+                <p>Monitoreo simulado de un motor industrial en tiempo real usando Inteligencia Artificial.</p>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section fade-in">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>IoT|Microcontrolers</li>
+            <li>Python|Pipelines|IoT</li>
+            <li>SQL|PosgrateSQL|Server|MySQL</li>
+            <li>Excel Avanzado</li>
+            <li>Automatización RPA</li>
+            <li>Power BI</li>
+        </ul>
+    </section>
+
+    <!-- ===== CERTIFICACIONES ===== -->
+    <section id="certificaciones" class="section fade-in">
+        <h2>Certificaciones</h2>
+
+        <div class="cert-container">
+            <div class="cert-item">Análisis de Datos</div>
+            <div class="cert-item">IoT</div>
+            <div class="cert-item">Python</div>
+            <div class="cert-item">Power BI</div>
+            <div class="cert-item">SQL</div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCIA ===== -->
+    <section id="experiencia" class="section fade-in">
+        <h2>Experiencia</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Analista de Datos</h3>
+                <p>Desarrollo de dashboards, automatización de procesos y análisis para la toma de decisiones | Proyectos Iot y Telemetria.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="section fade-in contacto">
+        <h2>Contacto</h2>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Nombre" required />
+            <input type="email" placeholder="Correo" required />
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div class="contact-icons">
+            <a href="www.linkedin.com/in/ing-juan-cifuentes" target="_blank">LinkedIn</a>
+            <a href="https://github.com/aprendizajecifuentes/aprendizajecifuentes" target="_blank">GitHub</a>
+            <a href="mailtotrabajo.juancifuentes@gmail.com">Correo</a>
+        </div>
+    </section>
+
+</body>
+</html>
