@@ -47,7 +47,7 @@ a:hover {
 /* Estilo para todas las secciones */
 .section {
     padding: 60px 20px;
-    opacity: 0; /* Inicialmente oculto para animación */
+    opacity: 1; /* Inicialmente oculto para animación */
     transform: translateY(20px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
