@@ -446,6 +446,67 @@ a:hover {
 /* ============================================== */
 /* SECCIÓN: CONTACTO */
 /* ============================================== */
+/* ============================================== */
+/* SECCIÓN: CONTACTO */
+/* ============================================== */
+.contact-container {
+    /* Mantén tus estilos existentes: */
+    display: flex;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--color-card-bg);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px var(--color-shadow);
+}
+
+/* 🆕 NUEVO ESTILO: Para cuando solo hay una columna de links */
+.contact-container.single-column {
+    display: block; /* Vuelve a modo de bloque */
+    text-align: center; /* Centra el título h4 */
+    max-width: 450px; /* Hace el contenedor más estrecho para un mejor look */
+}
+
+/* El formulario ya no existe, eliminamos su estilo */
+/* .contact-form {
+    flex: 2;
+} */
+
+/* 🆕 NUEVO ESTILO: Para centrar la columna social */
+.contact-social.centered-social {
+    align-items: center;
+    width: 100%;
+}
+
+.contact-social.centered-social h4 {
+    margin-bottom: 25px;
+}
+
+.contact-social {
+    /* Ajusta el flex para que los links se vean centrados/ordenados */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los links horizontalmente */
+}
+
+/* ... (El resto de tus estilos de contacto) ... */
+
+
+/* ============================================== */
+/* RESPONSIVE DESIGN (Media Queries) */
+/* ============================================== */
+
+@media (max-width: 768px) {
+    /* ... (Tus estilos existentes para móvil) ... */
+
+    /* 🆕 NUEVO ESTILO: Asegura que el contenedor se vea bien en móvil */
+    .contact-container.single-column {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
 .contact-container {
     display: flex;
     gap: 40px;
