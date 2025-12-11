@@ -152,17 +152,26 @@ a:hover {
     background-color: var(--color-primary);
 }
 
+
 /* Botón de CV estilizado */
 .nav-link-cv {
     background-color: var(--color-primary);
     margin-left: 20px;
     padding: 8px 15px;
     border-radius: 20px !important;
+    color: #fff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* suave iluminación */
+    transition: 0.3s ease-in-out;
 }
 
+/* Hover con iluminación más fuerte */
 .nav-link-cv:hover {
-    background-color: #004d99 !important; /* Azul más oscuro al pasar el ratón */
+    background-color: #004d99 !important;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.9),
+                0 0 25px rgba(0, 123, 255, 0.6); /* glow más intenso */
+    transform: translateY(-2px); /* leve elevación */
 }
+
 
 /* Ocultar botón de menú en desktop */
 .menu-toggle {
@@ -421,66 +430,86 @@ a:hover {
 }
 
 .download-button {
-    background: linear-gradient(90deg, var(--color-primary) 0%, #00aaff 100%);
-    color: var(--color-text-light);
+    color: #fff;
     padding: 15px 30px;
     border-radius: 30px;
     font-size: 1.1em;
     font-weight: 600;
-    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
-    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
     display: inline-flex;
     align-items: center;
+    border: none;
+
+    animation: blueCycle 10s infinite linear,
+               blueGlow 10s infinite linear;
+}
+
+/* Ciclo infinito de la paleta azul */
+@keyframes blueCycle {
+    0%   { background-color: #03045e; }
+    20%  { background-color: #0077b6; }
+    40%  { background-color: #00b4d8; }
+    60%  { background-color: #90e0ef; color: #000; }
+    80%  { background-color: #caf0f8; color: #000; }
+    100% { background-color: #03045e; color: #fff; }
+}
+
+/* Glow sincronizado con el color actual */
+@keyframes blueGlow {
+    0%   { box-shadow: 0 0 12px #03045e; }
+    20%  { box-shadow: 0 0 12px #0077b6; }
+    40%  { box-shadow: 0 0 12px #00b4d8; }
+    60%  { box-shadow: 0 0 12px #90e0ef; }
+    80%  { box-shadow: 0 0 12px #caf0f8; }
+    100% { box-shadow: 0 0 12px #03045e; }
 }
 
 .download-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.6);
 }
 
 .download-button i {
     margin-right: 10px;
 }
 
-
 /* ============================================== */
 /* SECCIÓN: CONTACTO */
 /* ============================================== */
+
+#contacto {
+    padding: 60px 20px;
+}
+
 .contact-container {
     display: flex;
     gap: 40px;
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin: 30px auto 0 auto;
     background-color: var(--color-card-bg);
-    padding: 30px;
+    padding: 35px;
     border-radius: var(--border-radius);
     box-shadow: 0 4px 15px var(--color-shadow);
 }
 
+/* FORMULARIO */
 .contact-form {
     flex: 2;
 }
 
-.contact-social {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-container h4 {
+.contact-form h4 {
     font-size: 1.5em;
     color: var(--color-secondary);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .form-group label {
     display: block;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     font-size: 0.9em;
 }
 
@@ -488,46 +517,61 @@ a:hover {
 .form-group input[type="email"],
 .form-group textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background-color: var(--color-bg-light);
     font-family: var(--font-family);
-    transition: border-color var(--transition-speed);
+    transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     border-color: var(--color-primary);
     outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.35);
 }
 
-.submit-button {
+/* BOTÓN ENVIAR */
+.contact-button {
     background-color: var(--color-primary);
     color: var(--color-text-light);
     border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
+    padding: 12px 25px;
+    border-radius: 25px;
     font-size: 1em;
     font-weight: 600;
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.4);
-    transition: background-color var(--transition-speed), transform var(--transition-speed);
+    display: inline-flex;
+    align-items: center;
+    transition: background-color var(--transition-speed), transform var(--transition-speed), box-shadow var(--transition-speed);
 }
 
-.submit-button:hover {
+.contact-button:hover {
     background-color: var(--color-secondary);
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px var(--color-shadow);
 }
 
-.submit-button i {
-    margin-left: 8px;
+/* COLUMNA SOCIAL */
+.contact-social {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
+.contact-social h4 {
+    font-size: 1.3em;
+    color: var(--color-secondary);
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+/* LINKS */
 .social-link {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     color: var(--color-text-dark);
     font-weight: 500;
     transition: color var(--transition-speed), transform var(--transition-speed);
@@ -539,16 +583,29 @@ a:hover {
 }
 
 .social-link i {
-    font-size: 1.5em;
+    font-size: 1.6em;
     margin-right: 10px;
     width: 30px;
     text-align: center;
 }
 
+/* COLORES ESPECÍFICOS REDES */
 .fa-linkedin { color: #0a66c2; }
 .fa-github-square { color: #333; }
 .fa-envelope-square { color: #d44638; }
 
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px;
+    }
+
+    .contact-social {
+        align-items: flex-start;
+    }
+}
 
 /* ============================================== */
 /* FOOTER */

@@ -1,0 +1,59 @@
+/* El video ocupa toda la pantalla */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el video sin deformarlo */
+    z-index: -1; /* Envía el video al fondo */
+  }
+  
+  /* Texto encima del video */
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 5px black;
+    padding: 5px 10px;
+    background-color: rgba(16, 26, 32, 0.232);
+    border-radius: 10px;
+  }
+  
+  .overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .overlay p {
+    font-size: 1.2rem;
+  }
+
+  .autor {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    font-size: 1rem;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-shadow: 1px 1px 3px rgb(20, 20, 20);
+    z-index: 10;
+    padding: 5px 10px;
+    background-color: rgba(16, 26, 32, 0.232);
+    border-radius: 5px;
+  }
+  
+  /* Responsivo para pantallas pequeñas */
+  @media (max-width: 600px) {
+    .autor {
+      font-size: 0.8rem;
+      right: 10px;
+      bottom: 8px;
+    }
+  }
+  
+  

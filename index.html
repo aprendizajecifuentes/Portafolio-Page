@@ -1,4 +1,4 @@
-el<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,7 @@ el<!DOCTYPE html>
                 <img src="assets/profile-photo.jpg" alt="Foto de Perfil de Juan Cifuentes" class="profile-photo">
                 <div class="titles">
                     <h1 class="main-title">Portafolio Ing. Juan Cifuentes R.</h1>
-                    <h2 class="subtitle">Business Analyst Junior | Analista de Datos</h2>
+                    <h2 class="subtitle">Ingeniero Mecatronico| Analista de Datos</h2>
                 </div>
             </div>
             <button class="menu-toggle" aria-label="Abrir Menú">
@@ -46,7 +46,7 @@ el<!DOCTYPE html>
             <div class="sobre-mi-content">
                 <img src="assets/second-photo.jpg" alt="Juan Cifuentes en entorno profesional" class="second-photo">
                 <p>
-                    Ingeniero Mecatrónico con formación técnica sólida y pasión por la analítica de datos. Interesado en desarrollar carrera como Data Analyst, aplicando herramientas como Power BI, SQL,Python, R y IoT para transformar datos en información estratégica. Me caracteriza un enfoque analítico, orientado a resultados y la capacidad de traducir datos complejos en decisiones de valor. Comprometido con el aprendizaje continuo y la innovación tecnológica.
+                    Ingeniero Mecatrónico con formación sólida en analítica de datos, IoT y Diseño. Interesado en desarrollar carrera como Business Analyst o afines, aplicando herramientas como Power BI, SQL,Python, R y IoT para transformar datos en información estratégica. Me caracteriza un enfoque analítico, orientado a resultados y la capacidad de traducir datos complejos en decisiones de valor. Comprometido con el aprendizaje continuo y la innovación tecnológica.
                 </p>
             </div>
         </section>
@@ -70,12 +70,24 @@ el<!DOCTYPE html>
                     </div>
                 </a>
 
-                <a href="#" class="project-card animate-on-scroll delay-200">
+                <a href="video.html" target="_blank" class="project-card animate-on-scroll delay-200">
+                    <div class="project-image-placeholder">
+                      <img src="assets/project-3d.jpg" alt="Icono de pipeline de datos">
+                    </div>
+                    <div class="project-info">
+                      <h4>Proyecto diseño 3D (CAD)</h4>
+                      <p>Proyecto CAD 3D desarrollado en Solid Edge que incluye el modelado completo de un ensamble mecánico, El proyecto cuenta con planos de cada pieza, el general y explosionado.</p>
+                      <span class="view-details">Ver explosionado <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                  </a>
+                  
+
+                <a href="#" class="project-card animate-on-scroll delay-400">
                     <div class="project-image-placeholder">
                          <img src="assets/project-pipeline.jpg" alt="Icono de pipeline de datos">
                     </div>
                     <div class="project-info">
-                        <h4>Proyecto de pipeline de datos</h4>
+                        <h4>Proyecto Pipeline ETL</h4>
                         <p>Pipeline ETL (Extracción, Transformación, Carga) de datos para clientes y ventas, con limpieza, transformación y visualización en dashboard.</p>
                         <span class="view-details">Detalles del Proyecto <i class="fas fa-arrow-right"></i></span>
                     </div>
@@ -218,10 +230,36 @@ el<!DOCTYPE html>
 
         <hr class="section-divider">
 
+        
+
         <section id="contacto" class="section animate-on-scroll">
             <div class="section-title-wrapper">
                 <h3 class="section-title">CONTACTO</h3>
             </div>
+
+            
+        <form id="contact-form" class="contact-form">
+        
+            <div class="form-group">
+                <h4>Enviar mensaje</h4>
+                <label for="name">Nombre o Empresa</label>
+                <input type="text" id="name" name="name" placeholder="Ingresa tu nombre o empresa" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+        
+            <button type="submit" class="contact-button">Enviar Mensaje</button>
+        
+        </form>
+
             <div class="contact-container">
                 <div class="contact-social">
                     <h4>Conéctate conmigo</h4>
