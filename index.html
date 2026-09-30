@@ -46,7 +46,7 @@
             <div class="sobre-mi-content">
                 <img src="assets/second-photo.webp" alt="Juan Cifuentes en entorno profesional" class="second-photo">
                 <p>
-                   iuiytfurdyea4aye Soy ingeniero mecatrónico con la capacidad de abordar problemas complejos de ingeniería, analizarlos en profundidad y transformarlos en soluciones aplicables a proyectos reales. Disfruto el proceso de aprendizaje continuo y la construcción práctica como forma de consolidar el conocimiento.
+                Soy ingeniero mecatrónico con la capacidad de abordar problemas complejos de ingeniería, analizarlos en profundidad y transformarlos en soluciones aplicables a proyectos reales. Disfruto el proceso de aprendizaje continuo y la construcción práctica como forma de consolidar el conocimiento.
 A lo largo de mi proceso, he desarrollado diferentes proyectos que integran diseño, electrónica y programación. Actualmente, mi enfoque está en dar el siguiente paso: convertir estas ideas en soluciones con valor real, orientadas a generar impacto y sostenibilidad.
 Por ello, estoy en la búsqueda de especializarme en un área específica que me permita profundizar, consolidar experiencia y desarrollar proyectos con un enfoque más estratégico y productivo. 
                 </p>
@@ -274,26 +274,30 @@ Por ello, estoy en la búsqueda de especializarme en un área específica que me
 
             
         <form id="contact-form" class="contact-form">
-        
-            <div class="form-group">
-                <h4>Enviar mensaje</h4>
-                <label for="name">Nombre o Empresa</label>
-                <input type="text" id="name" name="name" placeholder="Ingresa tu nombre o empresa" required>
-            </div>
-        
-            <div class="form-group">
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
-            </div>
-        
-            <div class="form-group">
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
-            </div>
-        
-            <button type="submit" class="contact-button">Enviar Mensaje</button>
-        
-        </form>
+
+    <div class="form-group">
+        <h4>Enviar mensaje</h4>
+        <label for="name">Nombre o Empresa</label>
+        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre o empresa" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+    </div>
+
+    <div class="form-group">
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    </div>
+
+    <!-- Honeypot anti-spam -->
+    <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+    <button type="submit" class="contact-button">Enviar Mensaje</button>
+    <p id="form-status" role="status" aria-live="polite"></p>
+
+</form>
 
             <div class="contact-container">
                 <div class="contact-social">
