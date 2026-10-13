@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio | Ing. Juan Cifuentes R.</title>
+    <meta name="description" content="Portafolio de Juan Cifuentes R., ingeniero mecatrónico: proyectos de datos (Python, SQL, Power BI), diseño CAD y electrónica.">
+    <meta property="og:title" content="Portafolio | Ing. Juan Cifuentes R.">
+    <meta property="og:description" content="Proyectos de datos, diseño mecánico y electrónica.">
+    <meta property="og:image" content="https://TU-SITIO/assets/profile-photo.webp">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%99%EF%B8%8F%3C/text%3E%3C/svg%3E">
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -13,17 +21,17 @@
     <header class="header">
         <div class="header-content">
             <div class="profile-info">
-                <img src="assets/profile-photo.webp" alt="Foto de Perfil de Juan Cifuentes" class="profile-photo">
+                <img src="assets/profile-photo.webp" alt="Foto de perfil de Juan Cifuentes" class="profile-photo">
                 <div class="titles">
                     <h1 class="main-title">Portafolio Ing. Juan Cifuentes R.</h1>
-                    <h2 class="subtitle">Ingeniero Mecatronico</h2>
+                    <p class="subtitle">Ingeniero Mecatrónico</p>
                 </div>
             </div>
-            <button class="menu-toggle" aria-label="Abrir Menú">
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navbar">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
-        
+
         <nav id="navbar" class="navbar">
             <ul class="nav-list">
                 <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
@@ -41,14 +49,14 @@
 
         <section id="sobre-mi" class="section animate-on-scroll">
             <div class="section-title-wrapper">
-                <h3 class="section-title">Sobre mí</h3>
+                <h2 class="section-title">Sobre mí</h2>
             </div>
             <div class="sobre-mi-content">
                 <img src="assets/second-photo.webp" alt="Juan Cifuentes en entorno profesional" class="second-photo">
                 <p>
                 Soy ingeniero mecatrónico con la capacidad de abordar problemas complejos de ingeniería, analizarlos en profundidad y transformarlos en soluciones aplicables a proyectos reales. Disfruto el proceso de aprendizaje continuo y la construcción práctica como forma de consolidar el conocimiento.
 A lo largo de mi proceso, he desarrollado diferentes proyectos que integran diseño, electrónica y programación. Actualmente, mi enfoque está en dar el siguiente paso: convertir estas ideas en soluciones con valor real, orientadas a generar impacto y sostenibilidad.
-Por ello, estoy en la búsqueda de especializarme en un área específica que me permita profundizar, consolidar experiencia y desarrollar proyectos con un enfoque más estratégico y productivo. 
+Por ello, estoy en la búsqueda de especializarme en un área específica que me permita profundizar, consolidar experiencia y desarrollar proyectos con un enfoque más estratégico y productivo.
                 </p>
             </div>
         </section>
@@ -57,74 +65,73 @@ Por ello, estoy en la búsqueda de especializarme en un área específica que me
 
         <section id="proyectos" class="section">
             <div class="section-title-wrapper">
-                <h3 class="section-title">PROYECTOS</h3>
+                <h2 class="section-title">PROYECTOS</h2>
             </div>
             <div class="proyectos-grid">
 
-                <a href="https://github.com/aprendizajecifuentes" class="project-card animate-on-scroll">
+                <a href="https://github.com/aprendizajecifuentes" target="_blank" rel="noopener noreferrer" class="project-card animate-on-scroll">
                     <div class="project-image-placeholder">
-                        <img src="assets/project-github.webp" alt="Vista previa de repositorios de GitHub">
+                        <img src="assets/project-github.webp" alt="Vista previa de repositorios de GitHub" loading="lazy" decoding="async">
                     </div>
                     <div class="project-info">
-                        <h4>GitHub Cuenta proyectos</h4>
+                        <h3>GitHub: cuenta de proyectos</h3>
                         <p>Visualización de los repositorios publicados en GitHub de los proyectos que están en curso. (Python, SQL, Power BI)</p>
-                        <span class="view-details">Ver Repositorios <i class="fas fa-arrow-right"></i></span>
+                        <span class="view-details">Ver repositorios <i class="fas fa-arrow-right"></i></span>
                     </div>
                 </a>
 
-                <a href="https://youtu.be/Uy3o2UUKRG4" target="_blank" class="project-card animate-on-scroll delay-200">
+                <a href="https://youtu.be/Uy3o2UUKRG4" target="_blank" rel="noopener noreferrer" class="project-card animate-on-scroll delay-200">
                     <div class="project-image-placeholder">
-                      <img src="assets/project-3d.webp" alt="Icono de pipeline de datos">
+                        <img src="assets/project-3d.webp" alt="Ensamble mecánico modelado en Solid Edge" loading="lazy" decoding="async">
                     </div>
                     <div class="project-info">
-                      <h4>Proyecto diseño 3D (CAD)</h4>
-                      <p>Proyecto CAD 3D desarrollado en Solid Edge que incluye el modelado completo de un ensamble mecánico, El proyecto cuenta con planos de cada pieza, el general y explosionado.</p>
-                      <span class="view-details">Ver explosionado <i class="fas fa-arrow-right"></i></span>
+                        <h3>Proyecto de diseño 3D (CAD)</h3>
+                        <p>Proyecto CAD 3D desarrollado en Solid Edge que incluye el modelado completo de un ensamble mecánico. El proyecto cuenta con planos de cada pieza, el general y explosionado.</p>
+                        <span class="view-details">Ver explosionado <i class="fas fa-arrow-right"></i></span>
                     </div>
-                  </a>
-                  
+                </a>
 
-                <a href="https://github.com/aprendizajecifuentes/Data_Pipeline_Ventas" class="project-card animate-on-scroll delay-400">
+                <a href="https://github.com/aprendizajecifuentes/Data_Pipeline_Ventas" target="_blank" rel="noopener noreferrer" class="project-card animate-on-scroll delay-400">
                     <div class="project-image-placeholder">
-                         <img src="assets/project-pipeline.webp" alt="Icono de pipeline de datos">
+                        <img src="assets/project-pipeline.webp" alt="Diagrama del pipeline ETL de ventas" loading="lazy" decoding="async">
                     </div>
                     <div class="project-info">
-                        <h4>Proyecto Pipeline ETL</h4>
+                        <h3>Proyecto Pipeline ETL</h3>
                         <p>Pipeline ETL (Extracción, Transformación, Carga) de datos para clientes y ventas, con limpieza, transformación y visualización en dashboard.</p>
-                        <span class="view-details">Detalles del Proyecto <i class="fas fa-arrow-right"></i></span>
+                        <span class="view-details">Detalles del proyecto <i class="fas fa-arrow-right"></i></span>
                     </div>
                 </a>
 
-                <a href="https://github.com/aprendizajecifuentes/Portafolio-Page" class="project-card animate-on-scroll delay-400">
+                <a href="https://github.com/aprendizajecifuentes/Portafolio-Page" target="_blank" rel="noopener noreferrer" class="project-card animate-on-scroll delay-400">
                     <div class="project-image-placeholder">
-                         <img src="assets/project-webPage.webp" alt="Icono de pagina web">
+                        <img src="assets/project-webPage.webp" alt="Vista previa de la página web del portafolio" loading="lazy" decoding="async">
                     </div>
                     <div class="project-info">
-                        <h4>Pagina web Portafolio</h4>
-                        <p>Creacion de pagina web tipo portafolio Web para mostrar proyectos y habilidades, desarrollando habilidades en edicion HTML,CSS y JavaScript.</p>
-                        <span class="view-details">Visualizacion del codigo <i class="fas fa-arrow-right"></i></span>
+                        <h3>Página web Portafolio</h3>
+                        <p>Creación de página web tipo portafolio para mostrar proyectos y habilidades, desarrollando destrezas en edición de HTML, CSS y JavaScript.</p>
+                        <span class="view-details">Visualización del código <i class="fas fa-arrow-right"></i></span>
                     </div>
                 </a>
 
-                <a href="https://github.com/aprendizajecifuentes/MechaMind-Analytics" class="project-card animate-on-scroll delay-400">
+                <a href="https://github.com/aprendizajecifuentes/MechaMind-Analytics" target="_blank" rel="noopener noreferrer" class="project-card animate-on-scroll delay-400">
                     <div class="project-image-placeholder">
-                        <img src="assets/project-dashboard.webp" alt="Icono de dashboard de monitoreo">
+                        <img src="assets/project-dashboard.webp" alt="Dashboard de monitoreo de un motor industrial" loading="lazy" decoding="async">
                     </div>
                     <div class="project-info">
-                        <h4>Dashboard de Mantenimiento Predictivo (En Proceso)</h4>
+                        <h3>Dashboard de mantenimiento predictivo (en proceso)</h3>
                         <p>Monitoreo simulado de un motor industrial en tiempo real con soporte de Inteligencia Artificial para predecir fallas.</p>
-                        <span class="view-details">Explorar Concepto <i class="fas fa-arrow-right"></i></span>
+                        <span class="view-details">Explorar concepto <i class="fas fa-arrow-right"></i></span>
                     </div>
                 </a>
 
-                 <a href="https://youtu.be/KA6aTaVz9Pg" class="project-card animate-on-scroll delay-400">
+                <a href="https://youtu.be/KA6aTaVz9Pg" target="_blank" rel="noopener noreferrer" class="project-card animate-on-scroll delay-400">
                     <div class="project-image-placeholder">
-                        <img src="assets/Proyect-circuito.webp" alt="Icono de dashboard de monitoreo">
+                        <img src="assets/Proyect-circuito.webp" alt="Diseño de circuito electrónico y modelo 3D de la placa" loading="lazy" decoding="async">
                     </div>
                     <div class="project-info">
-                        <h4>Diseño de circuitos electrónicos</h4>
-                        <p>Diseño de circuitos electrinicos, por fases, creacion de modelos 3D para creacion de productos.</p>
-                        <span class="view-details">Observar Diseño <i class="fas fa-arrow-right"></i></span>
+                        <h3>Diseño de circuitos electrónicos</h3>
+                        <p>Diseño de circuitos electrónicos por fases, con creación de modelos 3D para el desarrollo de productos.</p>
+                        <span class="view-details">Observar diseño <i class="fas fa-arrow-right"></i></span>
                     </div>
                 </a>
 
@@ -135,7 +142,7 @@ Por ello, estoy en la búsqueda de especializarme en un área específica que me
 
         <section id="skills" class="section animate-on-scroll">
             <div class="section-title-wrapper">
-                <h3 class="section-title">SKILLS / HABILIDADES</h3>
+                <h2 class="section-title">SKILLS / HABILIDADES</h2>
             </div>
             <div class="skills-grid">
                 <span class="skill-badge"><i class="fas fa-chart-bar"></i> Power BI</span>
@@ -143,10 +150,10 @@ Por ello, estoy en la búsqueda de especializarme en un área específica que me
                 <span class="skill-badge"><i class="fas fa-database"></i> SQL/Json</span>
                 <span class="skill-badge"><i class="fas fa-file-excel"></i> Excel Avanzado</span>
                 <span class="skill-badge"><i class="fas fa-microchip"></i> Microcontroladores</span>
-                <span class="skill-badge"><i class="fas fa-project-diagram"></i> Analisis de Procesos</span>
-                <span class="skill-badge"><i class="fas fa-drafting-compass"></i> Diseño Mecanico</span>
+                <span class="skill-badge"><i class="fas fa-project-diagram"></i> Análisis de Procesos</span>
+                <span class="skill-badge"><i class="fas fa-drafting-compass"></i> Diseño Mecánico</span>
                 <span class="skill-badge"><i class="fas fa-users"></i> Trabajo en Equipo</span>
-               <span class="skill-badge"><i class="fas fa-language"></i> Ingles</span>
+                <span class="skill-badge"><i class="fas fa-language"></i> Inglés</span>
             </div>
         </section>
 
@@ -154,7 +161,7 @@ Por ello, estoy en la búsqueda de especializarme en un área específica que me
 
         <section id="certificaciones" class="section animate-on-scroll">
             <div class="section-title-wrapper">
-                <h3 class="section-title">CERTIFICACIONES</h3>
+                <h2 class="section-title">CERTIFICACIONES</h2>
             </div>
             <div class="certificaciones-grid">
                 <div class="cert-card">
@@ -173,45 +180,45 @@ Por ello, estoy en la búsqueda de especializarme en un área específica que me
                     <i class="fas fa-file-excel cert-icon"></i>
                     <p>Certificado Excel</p>
                 </div>
-                              <div class="cert-card">
+                <div class="cert-card">
                     <i class="fas fa-database cert-icon"></i>
                     <p>Certificado SQL</p>
                 </div>
-              <div class="cert-card">
+                <div class="cert-card">
                     <i class="fas fa-cloud cert-icon"></i>
                     <p>Certificado IoT</p>
                 </div>
-                    <div class="cert-card">
+                <div class="cert-card">
                     <i class="fas fa-users cert-icon"></i>
                     <p>Certificado SCRUM</p>
-                </div>                    
-                 <div class="cert-card">
+                </div>
+                <div class="cert-card">
                     <i class="fas fa-lightbulb cert-icon"></i>
                     <p>Certificado Fundamentos ChatGPT</p>
                 </div>
                 <div class="cert-card future-cert">
                     <i class="fas fa-plus cert-icon"></i>
-                    <p>Otras Certificaciones (Por agregar)</p>
+                    <p>Otras certificaciones (por agregar)</p>
                 </div>
             </div>
         </section>
-        
+
         <hr class="section-divider">
 
         <section id="experiencia" class="section animate-on-scroll">
             <div class="section-title-wrapper">
-                <h3 class="section-title">EXPERIENCIA</h3>
+                <h2 class="section-title">EXPERIENCIA</h2>
             </div>
             <div class="timeline">
-                
+
                 <div class="timeline-item animate-on-scroll delay-100">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content card-experience">
-                        <h4>Business Analyst. (Programa MINTIC)-Instituto Triangulo |Sep2024-Nov2025</h4>
+                        <h3>Business Analyst (Programa MINTIC) | Instituto Triángulo | Sep 2024 - Nov 2025</h3>
                         <ul>
                             <li>Desarrollé visualizaciones interactivas en Power BI para presentar métricas operativas y KPI clave, incrementando la eficiencia en la toma de decisiones.</li>
                             <li>Realicé consultas y transformación de datos en SQL y DAX para la construcción de reportes y dashboards ejecutivos.</li>
-                            <li>Ejecuté procesos ETL para consolidar información proveniente de múltiples fuentes, mejorando la calidad y consistencia de los datasets..</li>
+                            <li>Ejecuté procesos ETL para consolidar información proveniente de múltiples fuentes, mejorando la calidad y consistencia de los datasets.</li>
                             <li>Apliqué análisis exploratorio y estadístico con Python y R para identificar patrones, detectar anomalías y recomendar acciones estratégicas.</li>
                             <li>Documenté procesos analíticos y presenté hallazgos a audiencias técnicas y no técnicas, fortaleciendo la comunicación de resultados y la gestión basada en datos.</li>
                         </ul>
@@ -221,109 +228,7 @@ Por ello, estoy en la búsqueda de especializarme en un área específica que me
                 <div class="timeline-item animate-on-scroll delay-300">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content card-experience">
-                        <h4>Ingeniero Mecatronico |Ingennova SAS (2024-2025)</h4>
+                        <h3>Ingeniero Mecatrónico | Ingennova SAS (2024-2025)</h3>
                         <ul>
-                            <li>Programacion Microcontrolador STM|usados en Telemetria (IoT).</li>
-                            <li>Saldadura Placas PCB.</li>
-                            <li>Cableado Cajas electronicas y electrico.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item animate-on-scroll delay-500">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content card-experience">
-                        <h4>Aprendiz Diseño Mecanico | HigthLigths SAS (2023-2024)</h4>
-                        <ul>
-                            <li>Actualizacion Base de Datos</li>
-                            <li>Mapeo de Planos</li>
-                            <li>Diseño 3D de prototipos</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item animate-on-scroll delay-800">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content card-experience">
-                        <h4>Tecnico Mantenimiento | AquaPrimavera / Tecnoaqua SAS (2019-2021)</h4>
-                        <ul>
-                            <li>Mantenimiento de sensores</li>
-                            <li>Mantenimiento equipos de laboratorio</li>
-                            <li>Reparacion electronico sensores y equipos laboratorio</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <hr class="section-divider">
-
-        <section id="descarga-cv" class="section download-cv-section animate-on-scroll">
-            <a href="assets/CV_Juan_Cifuentes.pdf" download class="download-button">
-                <i class="fas fa-file-download"></i> Descargar CV en PDF
-            </a>
-        </section>
-
-        <hr class="section-divider">
-
-        
-
-        <section id="contacto" class="section animate-on-scroll">
-            <div class="section-title-wrapper">
-                <h3 class="section-title">CONTACTO</h3>
-            </div>
-
-            
-        <form id="contact-form" class="contact-form">
-
-    <div class="form-group">
-        <h4>Enviar mensaje</h4>
-        <label for="name">Nombre o Empresa</label>
-        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre o empresa" required>
-    </div>
-
-    <div class="form-group">
-        <label for="email">Correo electrónico</label>
-        <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
-    </div>
-
-    <div class="form-group">
-        <label for="message">Mensaje</label>
-        <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
-    </div>
-
-    <!-- Honeypot anti-spam -->
-    <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
-
-    <button type="submit" class="contact-button">Enviar Mensaje</button>
-    <p id="form-status" role="status" aria-live="polite"></p>
-
-</form>
-
-            <div class="contact-container">
-                <div class="contact-social">
-                    <h4>Conéctate conmigo</h4>
-                    <a href="www.linkedin.com/in/ing-juan-cifuentes" target="_blank" class="social-link" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i> 
-                        LinkedIn
-                    </a>
-                    <a href="https://github.com/aprendizajecifuentes/aprendizajecifuentes" target="_blank" class="social-link" aria-label="GitHub">
-                        <i class="fab fa-github-square"></i> 
-                        GitHub
-                    </a>
-                    <a href="mailto:trabajo.juancifuentes@gmail.com" class="social-link" aria-label="Correo Directo">
-                        <i class="fas fa-envelope-square"></i> 
-                        trabajo.juancifuentes@gmail.com
-                    </a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Ing. Juan Cifuentes R. | Portafolio Profesional</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+                            <li>Programación de microcontroladores STM usados en telemetría (IoT).</li>
+                            <li>Soldadura de placas PCB.</li>
