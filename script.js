@@ -1,70 +1,59 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     /* ============================================== */
-    /* 1. Funcionalidad del Menú Responsive (Hamburguesa) */
+    /* 1. Menú responsive (hamburguesa) */
     /* ============================================== */
     const menuToggle = document.querySelector('.menu-toggle');
     const navbar = document.getElementById('navbar');
     const navLinks = document.querySelectorAll('.nav-list a');
 
-    // Toggle para abrir/cerrar el menú en móviles
     menuToggle.addEventListener('click', () => {
-        navbar.classList.toggle('active');
+        const open = navbar.classList.toggle('active');
+        menuToggle.setAttribute('aria-expanded', String(open));
     });
 
-    // Cerrar el menú al hacer clic en un enlace (solo en modo móvil)
+    // Cerrar el menú al hacer clic en un enlace (solo en móvil)
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             if (window.innerWidth <= 768) {
                 navbar.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
             }
         });
     });
 
 
     /* ============================================== */
-    /* 2. Animación Fade-in/Slide-in al hacer Scroll */
+    /* 2. Animación de entrada al hacer scroll */
     /* ============================================== */
-    
-    // Seleccionar todos los elementos con la clase de animación
     const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
 
-    // Función para verificar si un elemento está visible en el viewport
-    function isElementInViewport(el) {
-        const rect = el.getBoundingClientRect();
-        return (
-            rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.left <= (window.innerWidth || document.documentElement.clientWidth) &&
-            rect.bottom >= 0 &&
-            rect.right >= 0
-        );
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        elementsToAnimate.forEach((el) => observer.observe(el));
+    } else {
+        elementsToAnimate.forEach((el) => el.classList.add('is-visible'));
     }
 
-    // Función principal para manejar la animación
-    function checkAnimation() {
-        elementsToAnimate.forEach(el => {
-            if (isElementInViewport(el)) {
-                el.classList.add('is-visible');
-            }
-            // Opcional: Si se quiere que se oculte al salir del viewport:
-            // else {
-            //     el.classList.remove('is-visible');
-            // }
-        });
+
+    /* ============================================== */
+    /* 3. Año automático en el pie de página */
+    /* ============================================== */
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
     }
 
-    // Ejecutar la función al cargar la página y en cada evento de scroll/resize
-    checkAnimation();
-    window.addEventListener('scroll', checkAnimation);
-    window.addEventListener('resize', checkAnimation);
 
     /* ============================================== */
-    /* 3. Resaltar enlace de navegación activo (Opcional, avanzado) */
-    /* ============================================== */
-    // NOTA: Se ha omitido la lógica compleja de Intersection Observer para mantener el JS minimalista.
-    // La clase 'active' para el hover ya está manejada en CSS.
-
-        /* ============================================== */
     /* 4. Envío del formulario de contacto (Web3Forms) */
     /* ============================================== */
     const WEB3FORMS_ACCESS_KEY = '32c84e9f-9a68-4ac9-8903-4465b3a12059';
